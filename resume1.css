@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*reset*/
+*{
+    position: relative;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 微軟黑正體;
+    line-height: 24px;
+    color: rgb(54, 49, 49);
+    /* color:#2194E0 */
+
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	/* display: block; */
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset*/
+.clearfix{
+    clear: both;
+    height:0;
+}
+.container {
+    margin:auto;
+    max-width: 1000px;
+    height: 1000px;
+    background-image: url(image/resume.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* overflow: hidden; */
+  }
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content{
+    max-width: 820px;
+    margin: auto;
+    padding-top: 25px;
+    top: 50px;
+    background-color: whitesmoke;
+    border:11px double gray
+}
+.basic,.personal,.work,.education,.ability{
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.basic{
+     width: 40%;
+     float: left;
+     display: inline-block;
+ } 
+ 
+ .ability{   
+    width: 60%;
+    float: right;
+    display: inline-block;
+    padding-top:50px;
+ }
+ .personal{
+     border-bottom: 2px solid gray;
+ }
+ h1{
+     font-size: 42px;
+     text-align: center;
+     line-height: 50px;
+ }
+ .title{
+     font-size: 25px;
+     font-weight: bold;
+     line-height: 25px;
+     padding: 10px 0;
+ }
+ p{
+     line-height: 1.5;
+     letter-spacing: 2px;
+     padding-bottom: 5px;
+ }
+ hr{
+     border: 2PX solid gray ;
+ }
+ hr:before{
+     content:'';
+     width: 5px;
+     height: 5px;
+     border-radius: 50%;
+     color:gray;
+ }
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 50%;
+    right: 50%;
+    top:50%;
+    transform: translate(-50%,-8%);
+}
+
+ul.timeline{
+    border-left:solid 2px gray; 
+    display: block;
+}
+li.timeline-milestone{
+    /* height: 5px;
+    weight:5px;
+    background-color: red;
+    border-left: 2px solid #00637d; */
+    margin: 0 0 0 20px;
+    padding: 0 0 5px 25px;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+li.timeline-milestone::before,li.timeline-milestone:last-child::after{
+    content: '';
+    border: 11px solid rgba(204, 92, 129,0.8);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -40px;
+    width: 15px;
+    height: 15px;
+    /* box-sizing: border-box; */
+    
+    /* content: '';
+    border: 7px solid #59abc0;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -17px;
+    width: 32px;
+    height: 32px; */
+    
+}
+.timeline-milestone:before{
+    content: '';
+    background-color: whitesmoke;
+}
